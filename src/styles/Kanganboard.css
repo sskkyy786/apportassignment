@@ -67,7 +67,7 @@
     padding: 10px;
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 998px) {
   .group-column {
     flex: 1 1 100%; 
     flex-direction: row;
