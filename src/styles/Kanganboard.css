@@ -1,0 +1,176 @@
+.kanban{
+    /* background-color: #F4F6FA; */
+    /* padding: 1%; */
+    /* margin: 0; */
+    padding-top: 20px;
+    background-color: #F4F6FA;
+    height: auto;
+    /* width: 100vw; Full viewport width */
+    height: 100vh; /* Full viewport height */
+  }
+  .grouped-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #F4F6FA;
+    /*  */
+    flex-wrap: wrap;
+  }
+  
+  .group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    width: 90%;
+  }
+  
+  .group-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .group-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: #007bff;  */
+    object-fit: cover;
+  }
+  
+  .ticket-count {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555;
+    padding: 4px 8px;
+    /* background-color: #ddd; */
+    border-radius: 12px;
+  }
+  
+  .plus span{
+    margin: 5px;
+  }
+  
+  .group-column {
+    flex: 1;
+    /* min-width: 200px; */
+    /* flex: 1 1 calc(33.33% - 16px);  */
+    /* By default, each column takes 1/3rd of the row */
+    min-width: 200px; /* Ensures a minimum width for smaller screens */
+    /* background-color: #f5f5f5; */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 1440px) {
+  .group-column {
+    flex: 1 1 100%; 
+    flex-direction: row;
+  }
+}
+  
+  .group-column h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .dropdown {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .dropdown select {
+    padding: 5px;
+    font-size: 10px;
+  }
+  
+  .dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    
+  }
+  
+  
+  .display-btn {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  
+  .disp{
+    margin-bottom: 10px;
+  }
+  .display-btn img{
+    width: 16px; 
+    height: 16px; 
+    object-fit: cover; /* Ensures proper scaling */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .display-btn:hover {
+    background-color: #eaeaea;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dropdown-item span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 8px;
+  }
+  
+  .dropdown-item select {
+    width: 120px;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown-item select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .dropdown-content::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    border-width: 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  
+  
