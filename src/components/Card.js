@@ -1,74 +1,7 @@
 import React from 'react';
 import '../styles/Card.css';
 import profilepic from '../images/profile.png';
-
-// function Card({ id, title, status, priority, userName, tags }) {
-//   return (
-//     <div className="card">
-//       <div className="card-header">
-//         <span className="card-id">{id}</span>
-//         <h3 className="card-title">{title}</h3>
-//         <div className="user-avatar">
-//           <img src={profilepic} alt="User Avatar" />
-//         </div>
-//       </div>
-//       <div className="card-body">
-//         <p>Status: {status}</p>
-//         <p>Priority: {priority}</p>
-//       </div>
-//       <div className="card-footer">
-//         <div className="feature-label">
-//           {tags.map((tag, index) => (
-//             <span key={index} className="tag">
-//               {tag}
-//             </span>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Card;
-
-
-
-// function Card({ id, title, status, priority, priorityIcon, userName, tags = [] }) {
-//   return (
-//     <div className="card">
-//       <div className="card-header">
-//         <span className="card-id">{id}</span>
-//         <h3 className="card-title">{title}</h3>
-//         <div className="user-avatar">
-//           <img src={profilepic} alt="User Avatar" />
-//         </div>
-//       </div>
-//       <div className="card-body">
-//         <p>Status: {status}</p>
-//         <p>Priority: {priority}</p>
-//       </div>
-//       <div className="card-footer">
-//         <div className="feature-label">
-//         <div className="priority-icon">
-//           <img src={priorityIcon} alt={priority} className="priority-icon-image" />
-//         </div>
-//           {tags.length > 0 ? (
-//             tags.map((tag, index) => (
-//               <span key={index} className="tag">
-//                 {tag}
-//               </span>
-//             ))
-//           ) : (
-//             <span>No Tags</span> 
-//           )}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Card;
-
+import graydot from '../images/icons8-circle-16.png';
 import doneIcon from "../images/Done.svg";
 import inProgressIcon from "../images/in-progress.svg";
 import cancelledIcon from "../images/Cancelled.svg";
@@ -139,9 +72,13 @@ function Card({ id, title, status, priority, priorityIcon, userName, tags = [], 
           
           {tags.length > 0 ? (
             tags.map((tag, index) => (
-              <span key={index} className="tag">
+              <>
+              
+                <span key={index} className="tag">
+                <img src={graydot} alt="" srcset="" />
                 {tag}
-              </span>
+                </span>
+              </>
             ))
           ) : (
             <span>No Tags</span> 
